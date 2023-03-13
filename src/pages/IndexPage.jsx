@@ -17,7 +17,7 @@ export default function IndexPage(){
             <Link key={place._id} to={'/place/'+place._id} >
               <div className="bg-gray-500 mb-2 rounded-2xl">
                 {place.photos?.[0] && (
-                  <img className="rounded-2xl aspect-square object-cover" src={"http://localhost:4000/uploads/" + place.photos?.[0]} alt="" />
+                  <img className="rounded-2xl aspect-square object-cover" src={"https://dd-0088.onrender.com/uploads/" + place.photos?.[0]} alt="" />
                 )}
               </div>
               <h2 className="font-bold ">{place.address}</h2>
