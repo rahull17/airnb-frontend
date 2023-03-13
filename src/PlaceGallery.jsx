@@ -34,19 +34,19 @@ export default function PlaceGallery({place}){
                 <div className="grid gap-2 grid-cols-[2fr_1fr] rounded-2xl">
                     <div>
                         {place.photos?.[0] && (
-                            <img  onClick={()=>setShowPhotos(true)} className="aspect-square cursor-pointer object-cover min-w-full" src={"http://localhost:4000/uploads/"+place.photos[0]} alt="" />
+                            <img  onClick={()=>setShowPhotos(true)} className="aspect-square cursor-pointer object-cover min-w-full" src={"https://dd-0088.onrender.com/uploads/"+place.photos[0]} alt="" />
                         )}
                     </div>
                     <div className="grid">
                         <div>
                              {place.photos?.[1] && (
-                            <img onClick={()=>setShowPhotos(true)}  className="aspect-square cursor-pointer object-cover" src={"http://localhost:4000/uploads/"+place.photos[1]} alt="" />
+                            <img onClick={()=>setShowPhotos(true)}  className="aspect-square cursor-pointer object-cover" src={"https://dd-0088.onrender.com/uploads/"+place.photos[1]} alt="" />
                         )}
                         </div>
                        
                         <div className="overflow-hidden">
                             {place.photos?.[2] && (
-                            <img onClick={()=>setShowPhotos(true)}  className="aspect-square cursor-pointer object-cover" src={"http://localhost:4000/uploads/"+place.photos[2]} alt="" />
+                            <img onClick={()=>setShowPhotos(true)}  className="aspect-square cursor-pointer object-cover" src={"https://dd-0088.onrender.com/uploads/"+place.photos[2]} alt="" />
                         )}
                         </div>
                     </div>
